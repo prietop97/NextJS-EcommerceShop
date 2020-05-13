@@ -1,0 +1,65 @@
+.main-menu {
+    position: relative;
+    top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .left-menu {
+        display: flex;
+        align-items: center;
+        margin-left: 1rem;
+        width: 25%;
+
+        h3{
+            font-family: Montserrat sans-serif;
+            color: white;
+            margin-left: 1rem;
+            text-transform: uppercase;
+        }
+    }
+    
+    .sm-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .right-icons{
+        display: flex;
+        margin-right: 2rem;
+        width: 25%;
+        justify-content: flex-end;
+        align-items: center;
+
+        .social-media-icons {
+            display: flex;
+        }
+
+        .cart-icon{
+            margin-left: 2rem;
+            display: flex;
+            align-items:center;
+
+            p {
+                font-family: Montserrat sans-serif;
+                color:white;
+                font-weight: 600;
+                font-size: 1.2rem;
+                cursor: pointer;
+            }
+
+            .cart-svg{
+                height: 2.3rem;
+                margin-left: 0.5rem;
+            }
+        }
+    }
+}
+
+.navi-icon{
+    height: 1.7rem;
+    width: auto;
+    margin-left: 1rem;
+    cursor: pointer;
+}
