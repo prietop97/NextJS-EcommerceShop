@@ -4,4 +4,46 @@
     background-position: center;
     background-size: cover;
     height: 100vh;
+
+    .arrow-down-container{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        // bottom: 3rem;
+        width: 100%;
+
+        .arrow-down {
+            width: 1.6rem;
+            height: auto;
+            // color: white;
+            cursor: pointer;
+
+            &:hover > path{
+                fill: #1ebf90;
+            }
+        }
+    }
+    .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 5rem);
+        h1 {
+            font-size: 4.7rem;
+            color: white;
+            letter-spacing: 1.9rem;
+            font-family: Montserrat;
+            border-bottom: 0.5rem #1ebf90 solid;
+            padding-bottom: 0.5rem;
+            font-weight: bolder;
+            &:hover {
+                color: #1ebf90;
+                cursor: pointer;
+            }
+
+            span{
+                letter-spacing: normal;
+            }
+        }
+    }
 }

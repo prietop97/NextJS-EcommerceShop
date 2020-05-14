@@ -1,22 +1,36 @@
 .main-menu {
-    position: relative;
+    position: absolute;
     top: 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100vw;
 
     .left-menu {
         display: flex;
         align-items: center;
         margin-left: 1rem;
-        width: 25%;
+        padding: 0.5rem;
+        cursor: pointer;
 
         h3{
-            font-family: Montserrat sans-serif;
+            font-family: Montserrat;
             color: white;
             margin-left: 1rem;
             text-transform: uppercase;
+            font-weight: 800;
+            font-size: 0.9rem;
         }
+
+        &:hover .navi-icon > path {
+            fill: #1ebf90;
+
+        }
+
+        &:hover h3 {
+            color: #1ebf90;
+        }
+
     }
     
     .sm-logo {
@@ -37,9 +51,21 @@
         }
 
         .cart-icon{
-            margin-left: 2rem;
+            margin-left: 1rem;
             display: flex;
             align-items:center;
+            padding: 1rem;
+            cursor: pointer;
+
+            &:hover .navi-icon > path, &:hover .navi-icon > circle {
+                fill: #1ebf90;
+            }
+
+            &:hover p {
+                color: #1ebf90;
+            }
+
+
 
             p {
                 font-family: Montserrat sans-serif;
@@ -62,4 +88,8 @@
     width: auto;
     margin-left: 1rem;
     cursor: pointer;
+    fill: #fff;
+    &:hover > path, &:hover circle {
+        fill: #1ebf90;
+    }
 }
