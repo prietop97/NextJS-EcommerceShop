@@ -4,7 +4,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100vw;
+    right: 0;
+    left: 0;
 
     .left-menu {
         display: flex;
@@ -23,12 +24,12 @@
         }
 
         &:hover .navi-icon > path {
-            fill: #1ebf90;
+            fill: $main-color;
 
         }
 
         &:hover h3 {
-            color: #1ebf90;
+            color: $main-color;
         }
 
     }
@@ -41,10 +42,10 @@
 
     .right-icons{
         display: flex;
-        margin-right: 2rem;
         width: 25%;
         justify-content: flex-end;
         align-items: center;
+        margin-right: 1rem;
 
         .social-media-icons {
             display: flex;
@@ -58,11 +59,11 @@
             cursor: pointer;
 
             &:hover .navi-icon > path, &:hover .navi-icon > circle {
-                fill: #1ebf90;
+                fill: $main-color;
             }
 
             &:hover p {
-                color: #1ebf90;
+                color: $main-color;
             }
 
 
@@ -90,6 +91,6 @@
     cursor: pointer;
     fill: #fff;
     &:hover > path, &:hover circle {
-        fill: #1ebf90;
+        fill: $main-color;
     }
 }

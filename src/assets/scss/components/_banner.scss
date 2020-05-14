@@ -1,0 +1,30 @@
+.banner-container {
+	background-image: url("../../images/banner_image.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin: 2rem 0;
+	height: 50rem;
+
+	.banner-text {
+		font-size: 3.4rem;
+		color: white;
+		letter-spacing: 1.2rem;
+		padding-bottom: 0.5rem;
+		font-weight: bolder;
+		text-align: center;
+		text-decoration: underline solid $main-color;
+		text-underline-position: under;
+		margin: 2rem 0;
+		cursor: default;
+		line-height: 1.7;
+
+		span {
+			letter-spacing: normal;
+		}
+	}
+}

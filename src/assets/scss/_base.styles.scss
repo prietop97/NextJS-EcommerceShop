@@ -1,4 +1,32 @@
+$main-color: #1ebf90;
+$light-gray: #bbb;
+$main-font: Montserrat;
+$side-font: Karla;
+
 .toggle-off {
-    display: flex;
-    visibility: hidden
+	display: flex;
+	visibility: hidden;
+}
+
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $main-font;
+	text-transform: uppercase;
+}
+
+.error {
+	color: red;
+	font-family: $side-font;
+	font-size: 1rem;
+	margin: 1rem 0;
+	text-align: center;
 }

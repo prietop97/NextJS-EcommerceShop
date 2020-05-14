@@ -1,0 +1,29 @@
+.newsletter-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+
+	.newsletter-title {
+		font-family: $side-font;
+		color: black;
+		font-size: 1.1rem;
+	}
+
+	.newsletter-form {
+		margin: 3rem 0;
+
+		.newsletter-input {
+			padding: 0.8rem 1rem;
+			width: 400px;
+			margin-right: 1rem;
+			outline: none;
+			color: black;
+			text-transform: uppercase;
+			font-family: $main-font;
+			font-weight: 900;
+			font-size: 0.9rem;
+			border: $light-gray 2px solid;
+		}
+	}
+}

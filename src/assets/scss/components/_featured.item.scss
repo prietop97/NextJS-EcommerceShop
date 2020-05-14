@@ -1,0 +1,84 @@
+.featured-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .featured-photo {
+        width: 48%;
+
+        .featured-item-img {
+            width: 100%;;
+            height: auto;
+        }
+    }
+
+    .side-text {
+        width: 48%;
+        display: flex;
+        flex-direction: column;
+        height: inherit;
+        justify-content: center;
+
+        .featured-text{
+            font-size: 3rem;
+            font-weight: 900;
+            cursor: pointer;
+            &:hover{
+                color: $main-color;
+            }
+        }
+
+        .price {
+            font-size: 1.7rem;
+            color: $main-color;
+            margin: 1rem 0 2rem 0;
+            font-weight: 700;
+        }
+
+        .item-date{
+            color: $light-gray;
+            font-size: 0.8rem;
+        }
+
+        .description {
+            font-family: $side-font;
+            font-size: 1.2rem;
+            margin: 1rem 0;
+        }
+
+        .form-format {
+            display: flex;
+            flex-direction: column;
+            margin: 1rem 0;
+
+            label {
+                color: $light-gray;
+                font-family: $main-font;
+                font-size: 0.8rem;
+                margin-bottom: 0.7rem;
+                cursor: pointer;
+            }
+
+            select {
+                width: 375px;
+                padding: 0.4rem 0;
+                color: black;
+                text-transform: uppercase;
+                font-family: $main-font;
+                font-weight: 900;
+                font-size: 0.9rem;
+                border: $light-gray 2px solid;
+                outline: none;
+                cursor: pointer;
+            }
+        }
+
+        .cta-btns {
+            width: 75%;
+            display: flex;
+            justify-content: space-between;
+            margin: 1rem 0;
+        }
+    }
+}
+
+
