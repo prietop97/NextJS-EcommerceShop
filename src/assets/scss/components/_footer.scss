@@ -1,0 +1,93 @@
+.footerabout {
+	margin: 2rem 0;
+	display: flex;
+	justify-content: space-between;
+	.footer-container {
+		width: 20%;
+
+		.footer-navigation {
+			display: flex;
+			flex-direction: row;
+			list-style: none;
+			color: black;
+			justify-content: space-between;
+			font-family: $side-font;
+			cursor: pointer;
+			font-size: 1.1rem;
+			align-items: flex-end;
+
+			li {
+				&:hover {
+					color: $main-color;
+				}
+			}
+		}
+	}
+	.footer-newsletter {
+		width: 50%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+
+		.footer-newsletter-input {
+			padding: 0.5rem 0.5rem;
+			width: 300px;
+			margin-right: 1rem;
+			outline: none;
+			color: black;
+			text-transform: uppercase;
+			font-family: $main-font;
+			font-weight: 900;
+			font-size: 0.7rem;
+			border: $light-gray 2px solid;
+		}
+
+		button {
+			font-size: 0.7rem;
+			padding: 0.6rem 0.8rem;
+		}
+	}
+
+	.footer-title-primary {
+		font-size: 0.9rem;
+		font-family: $main-font;
+		color: $light-gray;
+		font-weight: 900;
+		margin-bottom: 2rem;
+	}
+}
+
+.footernav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 5rem 0 3rem 0;
+	.footer-trustbadge-container {
+		width: 25%;
+		margin-bottom: 2rem;
+		display: flex;
+		list-style: none;
+		justify-content: flex-end;
+		li {
+			margin-left: 0.7rem;
+		}
+	}
+
+	.footer-record-container {
+		color: $light-gray;
+		font-family: $main-font;
+		.record {
+			text-transform: capitalize;
+			margin-bottom: 1rem;
+		}
+
+		.powered-by {
+			text-transform: capitalize;
+			font-size: 0.7rem;
+			cursor: pointer;
+			&:hover {
+				color: $main-color;
+			}
+		}
+	}
+}
