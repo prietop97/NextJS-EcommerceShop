@@ -8,32 +8,24 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-
-		.small-product {
-			width: 20%;
-			text-align: center;
-			cursor: pointer;
-			&:hover {
-				opacity: 0.8;
-			}
-
-			img {
-				max-width: 100%;
-			}
-
-			.small-product-title {
-				margin-top: 1rem;
-				margin-bottom: 0.3rem;
-				font-weight: 500;
-			}
-
-			.small-product-price {
-				color: $main-color;
-				font-weight: 800;
-			}
-		}
 	}
-	.list-button {
-		margin-top: 2rem;
+}
+
+.small-product {
+	width: 20%;
+	text-align: center;
+	cursor: pointer;
+	&:hover {
+		opacity: 0.8;
 	}
+}
+.small-product-title {
+	margin-top: 1rem;
+	margin-bottom: 0.3rem;
+	font-weight: 500;
+}
+
+.small-product-price {
+	color: $main-color;
+	font-weight: 800;
 }

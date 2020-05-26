@@ -6,10 +6,10 @@ export const SecondaryHeading = styled.h2`
 	letter-spacing: ${(p) =>
 		p.spacing === "xl" ? "2rem" : p.spacing === "m" ? "1.5rem" : "0.1rem"};
 
-	font-size: 0.9rem;
+	font-size: ${(p) => (p.size ? p.size : "0.9rem")};
 	font-weight: 700;
 	&:hover {
-		cursor: pointer;
+		cursor: ${(p) => (p.hover ? "pointer" : "default")};
 		color: ${(p) => (p.hover ? p.theme.primaryColor : p.color)};
 	}
 `;

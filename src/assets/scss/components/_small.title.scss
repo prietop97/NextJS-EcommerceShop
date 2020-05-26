@@ -1,19 +1,19 @@
 .small-title-container {
-    width: 100%;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 4rem 0;
-    font-size: 1.3rem;
-    text-transform: uppercase;
-    letter-spacing: 0.2rem;
-    font-family: Monserrat;
+	width: 100%;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin: 4rem 0 2rem 0;
+	font-size: 1.3rem;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+	font-family: Monserrat;
 
-    .line-below-text {
-        border-bottom: solid #cfcfcf 3px;
-        width: 1.2rem;
-        margin-top: 1rem;
-    }
+	.line-below-text {
+		border-bottom: solid #cfcfcf 3px;
+		width: 1.2rem;
+		margin-top: 1rem;
+	}
 }

@@ -6,7 +6,8 @@ import Theme from "./ui/styles/Theme";
 import Footer from "./ui/components/Footer";
 import Homepage from "./ui/pages/Homepage";
 import Listings from "./ui/pages/Listings";
-import { Container } from "./ui/common/Container";
+import Listing from "./ui/pages/Listing";
+import Container from "./ui/components/Container";
 import MainNavigation from "./ui/components/MainNavigation";
 import BreadCrumb from "./ui/components/BreadCrumb";
 
@@ -26,11 +27,21 @@ function App() {
 			setColor("black");
 		}
 	}, [location]);
+
 	return (
 		<Theme>
-			<MainNavigation hidden={hidden} color={color} />
-			{!hidden && <BreadCrumb />}
+			{!hidden ? (
+				<Container>
+					<MainNavigation hidden={hidden} color={color} />
+					<BreadCrumb path={path} setPath={setPath} />
+				</Container>
+			) : (
+				<MainNavigation hidden={hidden} color={color} />
+			)}
 			<Switch>
+				<Route path="/item/:title">
+					<Listing />
+				</Route>
 				<Route path="/:category">
 					<Listings />
 				</Route>
