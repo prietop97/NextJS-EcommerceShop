@@ -3,7 +3,7 @@ import Hero from "../components/Hero";
 import SmallTitle from "../components/SmallTitle";
 import FeaturedItem from "../components/FeaturedItem";
 import ProductList from "../components/ProductList";
-import Container from "../components/Container";
+import { Container } from "../common/Container";
 import Banner from "../components/Banner";
 import Newsletter from "../components/Newsletter";
 

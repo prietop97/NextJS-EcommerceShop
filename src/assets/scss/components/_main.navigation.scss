@@ -1,96 +1,104 @@
 .main-menu {
-    position: absolute;
-    top: 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    right: 0;
-    left: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	.container33 {
+		width: 30%;
+	}
+	.left-menu {
+		display: flex;
+		align-items: center;
+		padding-left: 1rem;
+		padding: 0.5rem;
+		cursor: pointer;
+		width: 30%;
+		.left-menu-menu {
+			font-family: Montserrat;
+			color: white;
+			margin-left: 1rem;
+			text-transform: uppercase;
+			font-weight: 800;
+			font-size: 0.9rem;
+		}
 
-    .left-menu {
-        display: flex;
-        align-items: center;
-        margin-left: 1rem;
-        padding: 0.5rem;
-        cursor: pointer;
+		&:hover .navi-icon > path {
+			fill: $main-color;
+		}
 
-        h3{
-            font-family: Montserrat;
-            color: white;
-            margin-left: 1rem;
-            text-transform: uppercase;
-            font-weight: 800;
-            font-size: 0.9rem;
-        }
+		&:hover h3 {
+			color: $main-color;
+		}
+	}
 
-        &:hover .navi-icon > path {
-            fill: $main-color;
+	.sm-logo {
+		text-align: center;
+		vertical-align: center;
+		font-size: 2.5rem;
+		letter-spacing: 0.5rem;
+		font-weight: 900;
+		text-transform: uppercase;
+		font-family: $main-font;
+		width: 33%;
+		&:hover {
+			color: $main-color;
+			cursor: pointer;
+		}
+	}
 
-        }
+	.right-icons {
+		display: flex;
+		width: 30%;
+		justify-content: flex-end;
+		align-items: center;
+		padding-right: 1rem;
 
-        &:hover h3 {
-            color: $main-color;
-        }
+		.social-media-icons {
+			display: flex;
+		}
 
-    }
-    
-    .sm-logo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+		.cart-icon {
+			margin-left: 1rem;
+			display: flex;
+			align-items: center;
+			padding: 1rem;
+			cursor: pointer;
 
-    .right-icons{
-        display: flex;
-        width: 25%;
-        justify-content: flex-end;
-        align-items: center;
-        margin-right: 1rem;
+			&:hover .navi-icon > path,
+			&:hover .navi-icon > circle {
+				fill: $main-color;
+			}
 
-        .social-media-icons {
-            display: flex;
-        }
+			&:hover h3 {
+				color: $main-color;
+			}
 
-        .cart-icon{
-            margin-left: 1rem;
-            display: flex;
-            align-items:center;
-            padding: 1rem;
-            cursor: pointer;
-
-            &:hover .navi-icon > path, &:hover .navi-icon > circle {
-                fill: $main-color;
-            }
-
-            &:hover p {
-                color: $main-color;
-            }
-
-
-
-            p {
-                font-family: Montserrat sans-serif;
-                color:white;
-                font-weight: 600;
-                font-size: 1.2rem;
-                cursor: pointer;
-            }
-
-            .cart-svg{
-                height: 2.3rem;
-                margin-left: 0.5rem;
-            }
-        }
-    }
+			.cart-svg {
+				height: 2.3rem;
+				margin-left: 0.5rem;
+			}
+		}
+	}
 }
 
-.navi-icon{
-    height: 1.7rem;
-    width: auto;
-    margin-left: 1rem;
-    cursor: pointer;
-    fill: #fff;
-    &:hover > path, &:hover circle {
-        fill: $main-color;
-    }
+.navi-icon {
+	height: 1.7rem;
+	width: auto;
+	margin-left: 1rem;
+	cursor: pointer;
+	fill: #fff;
+	&:hover > path,
+	&:hover circle {
+		fill: $main-color;
+	}
+}
+
+.absolute-nav {
+	position: absolute;
+	top: 2rem;
+	right: 0;
+	left: 0;
+}
+
+.regular-nav {
+	margin: 1rem 0;
 }

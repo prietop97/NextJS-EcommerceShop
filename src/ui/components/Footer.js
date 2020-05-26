@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import Button from "./Button";
 import trustbadge from "../../assets/images/trust_badges.png";
-import TwitterSVG from "./TwitterSVG";
-import InstagramSVG from "./InstagramSVG";
-import FacebookSVG from "./FacebookSVG";
+import TwitterSVG from "./SVG/TwitterSVG";
+import InstagramSVG from "./SVG/InstagramSVG";
+import FacebookSVG from "./SVG/FacebookSVG";
 
 export default function Footer() {
 	const [formData, setFormData] = useState({ email: "" });
