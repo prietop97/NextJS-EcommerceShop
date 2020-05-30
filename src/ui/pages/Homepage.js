@@ -14,9 +14,9 @@ export default function Homepage() {
 	const [products, setProducts] = useState(featured1);
 	const [products2, setProducts2] = useState(featured2);
 	return (
-		<div>
-			<Hero />
-			<SmallTitle text="Latest Release" />
+		<div id="home_page">
+			<Hero id="hero_component" />
+			<SmallTitle id="small_title_component" text="Latest Release" />
 			<Container>
 				<FeaturedItem />
 				<SmallTitle text="Releases" />
