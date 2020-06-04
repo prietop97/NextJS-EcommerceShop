@@ -1,68 +1,48 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# E-commerce Shop
 
-In the project directory, you can run:
+You can find the deployed project at [Coming Soon].
 
-### `npm start`
+## Documentation
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+See [Backend Documentation(Coming Soon)] for details on the backend of our project.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+![MIT](https://img.shields.io/packagist/l/doctrine/orm.svg)
 
-### `npm test`
+## Project Overview
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Easy-to-use, ‘cloud application’ that gives the owner the ability to sell their products online. Owner would also be able to edit store information and style if they decide to sell something completly different in the future.
 
-### `npm run build`
+### Key Features
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Admin CMS
+- Add/Update/Delete products and categories
+- Update store colors and fonts
+- View store and purchase products using Stripe
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Tech Stack
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Front end built using:
 
-### `npm run eject`
+#### Front end framework is NextJS
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Familiarity is one the biggest advantage using NextJS, everyone can start coding from day one.
+- A popular React framework that is fast, scalable, simple, and maintained by a lot of developers.
+- I'm likely to have a need to reuse modular units of code (due to products) that will appear in our various routes/views.
+- I also want something that is performant, easy to maintain/extend and SEO friendly.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Styled Components - an add-on for creating dynamic styles directly in NextJS components.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Use Case: Having a base library implemented for overall site styling will cover most use cases, but we may need more flexibility on a per-component basis and the ability to add/alter styles dynamically based user interaction/the state of the application, and Styled Components can provide this.
+- Pros: easy to use, easy to create, can make them custom
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Installation Instructions
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+`npm install` within the client directory
 
-### Code Splitting
+## Other Scripts
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+    * build - creates a build of the application
+    * start - starts the production server after a build is created
